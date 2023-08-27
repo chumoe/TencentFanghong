@@ -11,9 +11,9 @@
         var url = document.location.toString();
         var urlParmStr = url.slice(url.indexOf('=')+1);
     
-        var notice_openBrowser = "<h2>请点击右上角，通过浏览器打开本页面。</h2><br />不得不看的内容，复制到浏览器打开吧：<b style=\"color:red\">" + urlParmStr + "</b>"
+        document.getElementById("tips").innerHTML = "<h2>请点击右上角，通过浏览器打开本页面。</h2><br />不得不看的内容，复制到浏览器打开吧：<b style=\"color:red\">" + urlParmStr + "</b>"
     
-        location.href=urlParmStr;
+        location.href = urlParmStr;
     </script>
 </body>
 </html>
