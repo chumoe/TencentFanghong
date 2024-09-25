@@ -15,7 +15,7 @@
         var isWeixin = ua.indexOf('micromessenger') != -1;
         // 判断是不是在微信客户端打开
         if(isWeixin || isQQ) {
-            document.getElementById("tips").innerHTML = "<h2>本站点不支持使用微信和QQ打开，请点击右上角，通过浏览器打开本页面。</h2><br />或者复制到浏览器打开吧：<b style=\"color:red\">" + urlParmStr + "</b>"
+            document.getElementById("tips").innerHTML = "<h2>本站点不支持使用微信和QQ打开，请点击右上角，通过浏览器打开</h2><br />或者复制到浏览器打开吧：<b style=\"color:red\">" + urlParmStr + "</b>"
         } else {
             location.href = urlParmStr;
         }
